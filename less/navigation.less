@@ -1,10 +1,20 @@
 // Navigation code here
 .navigation {
-    .desktop-size(); 
-    
+    position: fixed;
+    top: 0;
+    max-width: 800px;
+    margin-left: 30%;
+    width: 100%;
+    opacity: 0.8;
+    background-color: lightgray;
+    @media (max-width: 1000px) {
+        margin-left: 10%;
+        width: 95vw;
+    }
     @media @mobile {
-        width: 98vw;
+        width: 99vw;
         margin-top: 13px;
+        margin-left: 1%;
     }
 
     
