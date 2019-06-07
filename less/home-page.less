@@ -1,8 +1,18 @@
 // Home Content
-
 .home {
 
+  @media @mobile {
+    width: 98vw;
+  }
+
   .intro {
+
+    .header-img {
+      @media @mobile {
+        height: 125px;
+      }
+
+    }
 
     h2 {
       padding: 15px;
@@ -24,6 +34,17 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+    }
+    @media @mobile {
+      .blast {
+        width: 90vw;;
+      }
+      .sky {
+        display: none
+      }
+      .launch {
+        display: none
+      }
     }
   }
 
@@ -58,7 +79,20 @@
       }
 
       .btn {
+    
+        
+        button {
+          .button-design(#22283A, 8px 5px 5px 5px, white, 6px, 30%, 1.8rem, bold, none)
+          
+        }
+
+        button:hover {
+          color: #22283A;
+          background-color: white;
+          border: solid black 2px;
+        }
       }
+    
     }
 
     .walk-img {
@@ -70,6 +104,31 @@
         height: auto;
         border-radius: 10px;
       }
+    }
+  @media @mobile {
+    padding: 0;
+    margin-top: 0;
+    margin-left: 4%;
+    flex-direction: column;
+      .walk-text {
+        order: 2;
+        width: 90vw;
+        .btn {
+          // width: 95vw;
+  
+          button {
+            width: 95vw;
+            padding: 30px 5px;
+          }
+        }
+        
+      }
+      .walk-img {
+        order: 1;
+        width: 95vw;
+        margin: 50px 0 25px 0;
+      }
+      
     }
   }
 }// home

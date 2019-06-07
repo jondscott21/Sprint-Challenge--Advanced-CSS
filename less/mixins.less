@@ -1,1 +1,24 @@
 // Mixins Here
+.button-design(@b-c, @p, @c, @b-r, @w, @f-s, @f-w, @border) {
+    background-color: @b-c;
+    padding: @p;
+    color: @c;
+    border-radius: @b-r;
+    width: @w;
+    font-size: @f-s;
+    font-weight: @f-w;
+    border: @border;
+
+}
+
+.nav-align() {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.desktop-size() {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto; 
+}
